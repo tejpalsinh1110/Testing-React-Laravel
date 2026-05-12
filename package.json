@@ -3,13 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
- "scripts": {
-        "dev": "vite",
-        "build": "vite build",
-        "watch": "vite build --watch --mode development",
-        "serve": "php artisan serve",
-        "dev-full": "concurrently \"npm run watch\" \"npm run serve\""
-    },
+  "scripts": {
+    "dev": "node init && vite",
+    "build": "node init && vite build",
+    "watch": "vite build --watch --mode development",
+    "serve": "php artisan serve",
+    "dev-full": "node init && concurrently \"npm run watch\" \"npm run serve\""
+  },
   "dependencies": {
     "axios": "^1.7.3",
     "react": "^18.3.1",
